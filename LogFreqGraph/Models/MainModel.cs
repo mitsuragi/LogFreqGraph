@@ -9,7 +9,7 @@ namespace LogFreqGraph.Models
     internal class MainModel
     {
         private List<TransferFunction> functionsList;
-        private double kCoef;
+        private double kCoef = 1;
         public List<TransferFunction> FunctionsList
         {
             get => functionsList;

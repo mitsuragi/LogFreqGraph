@@ -20,10 +20,13 @@ namespace LogFreqGraph.Presenters
             mainView.AddTransferFunction += AddTransferFunction;
             mainView.RemoveTransferFunction += RemoveTransferFunction;
             mainView.RefreshCoefficientK += RefreshCoefficientK;
+            mainView.PlotGraph += PlotGraph;
 
             graphView = _graphView;
 
             model = _model;
+
+            RefreshView();
         }
 
         public void Run()
@@ -37,13 +40,14 @@ namespace LogFreqGraph.Presenters
 
             addFunctionPresenter.Run();
 
-            mainView.SetFunctionsList(model.FunctionsList);
+            RefreshView();
         }
 
         private void RefreshCoefficientK()
         {
             model.KCoef = mainView.GetCoefficientK();
-            mainView.SetCoefficientK(model.KCoef);
+
+            RefreshView();
         }
 
         private void RemoveTransferFunction()
@@ -53,12 +57,19 @@ namespace LogFreqGraph.Presenters
             {
                 model.RemoveTransferFunctionAt(index);
             }
-            mainView.SetFunctionsList(model.FunctionsList);
+
+            RefreshView();
         }
 
         private void PlotGraph()
         {
             throw new NotImplementedException();
+        }
+        
+        private void RefreshView()
+        {
+            mainView.SetCoefficientK(model.KCoef);
+            mainView.SetFunctionsList(model.FunctionsList);
         }
     }
 }

@@ -31,12 +31,16 @@ namespace LogFreqGraph.Views
 
         public List<double> GetDenominatorCoefficients()
         {
-            throw new NotImplementedException();
+            return new List<double>(Array.ConvertAll(
+                denominatorTextBox.Text.Split(' ', StringSplitOptions.RemoveEmptyEntries),
+                double.Parse));
         }
 
         public List<double> GetEnumeratorCoefficients()
         {
-            throw new NotImplementedException();
+            return new List<double>(Array.ConvertAll(
+                enumeratorTextBox.Text.Split(' ', StringSplitOptions.RemoveEmptyEntries),
+                double.Parse));
         }
         #endregion
 
@@ -48,7 +52,7 @@ namespace LogFreqGraph.Views
 
         public new void Close()
         {
-            Close();
+            Dispose();
         }
         #endregion
     }

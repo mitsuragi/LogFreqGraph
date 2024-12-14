@@ -31,7 +31,7 @@
             kCoefRefreshBtn = new Button();
             addBtn = new Button();
             functionLabel = new Label();
-            label2 = new Label();
+            kInfoLabel = new Label();
             kLabel = new Label();
             kTextBox = new TextBox();
             removeBtn = new Button();
@@ -73,16 +73,16 @@
             functionLabel.Text = "Список передаточных функций";
             functionLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // kInfoLabel
             // 
-            label2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel1.SetColumnSpan(label2, 3);
-            label2.Location = new Point(3, 94);
-            label2.Name = "label2";
-            label2.Size = new Size(387, 31);
-            label2.TabIndex = 4;
-            label2.Text = "Текущее значение коэффициента k:";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            kInfoLabel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel1.SetColumnSpan(kInfoLabel, 3);
+            kInfoLabel.Location = new Point(3, 94);
+            kInfoLabel.Name = "kInfoLabel";
+            kInfoLabel.Size = new Size(387, 31);
+            kInfoLabel.TabIndex = 4;
+            kInfoLabel.Text = "Текущее значение коэффициента k:";
+            kInfoLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // kLabel
             // 
@@ -137,7 +137,7 @@
             tableLayoutPanel1.Controls.Add(graphBtn, 2, 1);
             tableLayoutPanel1.Controls.Add(kLabel, 0, 3);
             tableLayoutPanel1.Controls.Add(removeBtn, 1, 1);
-            tableLayoutPanel1.Controls.Add(label2, 0, 2);
+            tableLayoutPanel1.Controls.Add(kInfoLabel, 0, 2);
             tableLayoutPanel1.Controls.Add(kTextBox, 1, 3);
             tableLayoutPanel1.Location = new Point(-1, -2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -179,7 +179,7 @@
         private Button kCoefRefreshBtn;
         private Button addBtn;
         private Label functionLabel;
-        private Label label2;
+        private Label kInfoLabel;
         private Label kLabel;
         private TextBox kTextBox;
         private Button removeBtn;

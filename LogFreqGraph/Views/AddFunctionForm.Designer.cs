@@ -155,6 +155,9 @@
             // 
             // AddFunctionForm
             // 
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             AcceptButton = submitBtn;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -170,8 +173,6 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
         private TextBox denominatorTextBox;
         private TextBox tCoefTextBox;
         private TableLayoutPanel tableLayoutPanel1;

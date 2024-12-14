@@ -42,11 +42,13 @@ namespace LogFreqGraph.Views
 
         public void SetCoefficientK(double value)
         {
-            kTextBox.Text = $"Текущее значение коэффициента k:{value}";
+            kInfoLabel.Text = $"Текущее значение коэффициента k: {value}";
         }
 
         void IMainView.SetFunctionsList(List<TransferFunction> list)
         {
+            functionsListBox.Items.Clear();
+
             foreach (TransferFunction tf in list)
             {
                 functionsListBox.Items.Add(tf);
