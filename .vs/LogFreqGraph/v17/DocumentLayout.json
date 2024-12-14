@@ -1,0 +1,339 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\presenters\\addfunctionpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\presenters\\addfunctionpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\addfunctionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\addfunctionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\addfunctionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\addfunctionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\interfaces\\iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\interfaces\\iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\interfaces\\iaddfunctionview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\interfaces\\iaddfunctionview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\interfaces\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\interfaces\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\interfaces\\igraphview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\interfaces\\igraphview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\addfunctionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\addfunctionform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\presenters\\viewfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\presenters\\viewfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\interfaces\\ipresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\interfaces\\ipresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\models\\mainmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\models\\mainmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\interfaces\\iviewfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\interfaces\\iviewfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.cs [Design]",
+              "RelativeToolTip": "LogFreqGraph\\Views\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:47:59.769Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.Designer.cs",
+              "RelativeToolTip": "LogFreqGraph\\Views\\MainForm.Designer.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAYwJUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:28:33.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Presenters\\MainPresenter.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Presenters\\MainPresenter.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Presenters\\MainPresenter.cs",
+              "RelativeToolTip": "LogFreqGraph\\Presenters\\MainPresenter.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAASwDcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:15:54.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.cs",
+              "RelativeToolTip": "LogFreqGraph\\Views\\MainForm.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:08:37.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddFunctionPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Presenters\\AddFunctionPresenter.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Presenters\\AddFunctionPresenter.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Presenters\\AddFunctionPresenter.cs",
+              "RelativeToolTip": "LogFreqGraph\\Presenters\\AddFunctionPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:48:37.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddFunctionForm.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\AddFunctionForm.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\AddFunctionForm.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\AddFunctionForm.cs",
+              "RelativeToolTip": "LogFreqGraph\\Views\\AddFunctionForm.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAIwCQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T13:56:58.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddFunctionForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\AddFunctionForm.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\AddFunctionForm.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\AddFunctionForm.cs [Design]",
+              "RelativeToolTip": "LogFreqGraph\\Views\\AddFunctionForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:46:45.897Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GraphForm.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\GraphForm.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\GraphForm.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\GraphForm.cs",
+              "RelativeToolTip": "LogFreqGraph\\Views\\GraphForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T19:40:30.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GraphForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\GraphForm.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\GraphForm.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\GraphForm.cs [Design]",
+              "RelativeToolTip": "LogFreqGraph\\Views\\GraphForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T20:09:26.841Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IView.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IView.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Interfaces\\IView.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IView.cs",
+              "RelativeToolTip": "LogFreqGraph\\Interfaces\\IView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:22:28.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAddFunctionView.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IAddFunctionView.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Interfaces\\IAddFunctionView.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IAddFunctionView.cs",
+              "RelativeToolTip": "LogFreqGraph\\Interfaces\\IAddFunctionView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:50:56.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IMainView.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IMainView.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Interfaces\\IMainView.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IMainView.cs",
+              "RelativeToolTip": "LogFreqGraph\\Interfaces\\IMainView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T13:35:36.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IGraphView.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IGraphView.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Interfaces\\IGraphView.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IGraphView.cs",
+              "RelativeToolTip": "LogFreqGraph\\Interfaces\\IGraphView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:15:48.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddFunctionForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\AddFunctionForm.Designer.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\AddFunctionForm.Designer.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\AddFunctionForm.Designer.cs",
+              "RelativeToolTip": "LogFreqGraph\\Views\\AddFunctionForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:47:42.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ViewFactory.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Presenters\\ViewFactory.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Presenters\\ViewFactory.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Presenters\\ViewFactory.cs",
+              "RelativeToolTip": "LogFreqGraph\\Presenters\\ViewFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T14:42:03.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Program.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Program.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Program.cs",
+              "RelativeToolTip": "LogFreqGraph\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:21:17.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IPresenter.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Interfaces\\IPresenter.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IPresenter.cs",
+              "RelativeToolTip": "LogFreqGraph\\Interfaces\\IPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:19:55.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainModel.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Models\\MainModel.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Models\\MainModel.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Models\\MainModel.cs",
+              "RelativeToolTip": "LogFreqGraph\\Models\\MainModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T22:29:04.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IViewFactory.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IViewFactory.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Interfaces\\IViewFactory.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Interfaces\\IViewFactory.cs",
+              "RelativeToolTip": "LogFreqGraph\\Interfaces\\IViewFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T14:41:13.18Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
