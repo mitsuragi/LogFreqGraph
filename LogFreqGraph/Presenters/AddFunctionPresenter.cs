@@ -1,4 +1,5 @@
-﻿using LogFreqGraph.Interfaces;
+﻿using LogFreqGraph.Common;
+using LogFreqGraph.Interfaces;
 using LogFreqGraph.Models;
 using System;
 using System.Collections.Generic;
@@ -8,34 +9,32 @@ using System.Threading.Tasks;
 
 namespace LogFreqGraph.Presenters
 {
-    internal class AddFunctionPresenter : IPresenter
+    public class AddFunctionPresenter : BasePresenter<IAddFunctionView, IModel>
     {
-        private readonly IAddFunctionView addFunctionView;
-        private MainModel model;
+        private IModel model;
 
-        public AddFunctionPresenter(IAddFunctionView _addFunctionView, MainModel _model)
+        public AddFunctionPresenter(IApplicationController _controller, IAddFunctionView _view)
+            : base(_controller, _view)
         {
-            addFunctionView = _addFunctionView;
-            addFunctionView.AddTransferFunction += AddTransferFunction;
-
-            model = _model;
+            View.AddTransferFunction += AddTransferFunction;
         }
 
-        public void Run()
+        public override void Run(IModel argument)
         {
-            addFunctionView.Show();
+            model = argument;
+            View.Show();
         }
 
         private void AddTransferFunction()
         {
-            List<double> enumeratorCoefs = addFunctionView.GetEnumeratorCoefficients();
-            List<double> denominatorCoefs = addFunctionView.GetDenominatorCoefficients();
-            double t = addFunctionView.GetCoefficientT();
+            List<double> enumeratorCoefs = View.GetEnumeratorCoefficients();
+            List<double> denominatorCoefs = View.GetDenominatorCoefficients();
+            double t = View.GetCoefficientT();
 
             TransferFunction tf = new TransferFunction(enumeratorCoefs, denominatorCoefs, t);
             model.AddTransferFunction(tf);
 
-            addFunctionView.Close();
+            View.Close();
         }
     }
 }

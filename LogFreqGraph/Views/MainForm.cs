@@ -14,8 +14,12 @@ namespace LogFreqGraph.Views
 {
     public partial class MainForm : Form, IMainView
     {
-        public MainForm()
+        private readonly ApplicationContext context;
+
+        public MainForm(ApplicationContext _context)
         {
+            context = _context;
+
             InitializeComponent();
 
             addBtn.Click += (sender, args) => Invoke(AddTransferFunction);
@@ -61,6 +65,7 @@ namespace LogFreqGraph.Views
 
         public new void Show()
         {
+            context.MainForm = this;
             Application.Run(this);
         }
 

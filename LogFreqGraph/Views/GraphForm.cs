@@ -13,14 +13,33 @@ namespace LogFreqGraph.Views
 {
     public partial class GraphForm : Form, IGraphView
     {
-        public GraphForm() 
+        private readonly ApplicationContext context;
+
+        public GraphForm(ApplicationContext _context)
         {
+            context = _context;
+
             InitializeComponent();
         }
 
+        #region "IGraphView Interface Implementation"
+
+        public event Action Return;
+
+        public void SetCharts()
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
+
         #region "IView Interface Implementation"
 
-
+        public new void Show()
+        {
+            context.MainForm = this;
+            base.Show();
+        }
 
         #endregion
     }

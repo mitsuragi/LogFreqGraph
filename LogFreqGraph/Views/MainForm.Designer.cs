@@ -131,7 +131,6 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333359F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333359F));
             tableLayoutPanel1.Controls.Add(functionLabel, 0, 0);
-            tableLayoutPanel1.Controls.Add(functionsListBox, 0, 4);
             tableLayoutPanel1.Controls.Add(addBtn, 0, 1);
             tableLayoutPanel1.Controls.Add(kCoefRefreshBtn, 2, 3);
             tableLayoutPanel1.Controls.Add(graphBtn, 2, 1);
@@ -139,6 +138,7 @@
             tableLayoutPanel1.Controls.Add(removeBtn, 1, 1);
             tableLayoutPanel1.Controls.Add(kInfoLabel, 0, 2);
             tableLayoutPanel1.Controls.Add(kTextBox, 1, 3);
+            tableLayoutPanel1.Controls.Add(functionsListBox, 0, 4);
             tableLayoutPanel1.Location = new Point(-1, -2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 4;
@@ -158,7 +158,7 @@
             functionsListBox.Location = new Point(3, 191);
             functionsListBox.Name = "functionsListBox";
             functionsListBox.Size = new Size(387, 424);
-            functionsListBox.TabIndex = 15;
+            functionsListBox.TabIndex = 17;
             // 
             // MainForm
             // 

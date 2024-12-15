@@ -2,7 +2,7 @@
 
 namespace LogFreqGraph.Interfaces
 {
-    internal interface IMainView : IView
+    public interface IMainView : IView
     {
         void SetFunctionsList(List<TransferFunction> list);
         void SetCoefficientK(double value);

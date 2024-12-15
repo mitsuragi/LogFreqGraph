@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LiveChartsCore.Easing;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace LogFreqGraph.Interfaces
 {
-    internal interface IGraphView : IView
+    public interface IGraphView : IView
     {
+        void SetCharts();
+
+        event Action Return;
     }
 }

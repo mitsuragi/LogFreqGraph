@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LogFreqGraph.Interfaces
 {
-    internal interface IAddFunctionView : IView
+    public interface IAddFunctionView : IView
     {
         List<double> GetEnumeratorCoefficients();
         List<double> GetDenominatorCoefficients();

@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace LogFreqGraph.Models
 {
-    internal class TransferFunction
+    public class TransferFunction
     {
-        private List<double> enumeratorCoeffs;
+        private List<double> numeratorCoeffs;
         private List<double> denominatorCoeffs;
         private double tCoef;
 
-        public List<double> EnumeratorCoeffs
+        public List<double> NumeratorCoeffs
         {
-            get => enumeratorCoeffs;
-            set => enumeratorCoeffs = value;
+            get => numeratorCoeffs;
+            set => numeratorCoeffs = value;
         }
         public List<double> DenominatorCoeffs
         {
@@ -28,11 +28,79 @@ namespace LogFreqGraph.Models
             set => tCoef = value;
         }
 
-        public TransferFunction(List<double> ec, List<double> dc, double t)
+        public TransferFunction(List<double> nc, List<double> dc, double t)
         {
-            enumeratorCoeffs = ec;
+            numeratorCoeffs = nc;
             denominatorCoeffs = dc;
             tCoef = t;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder numerator = new StringBuilder();
+            StringBuilder denominator = new StringBuilder();
+
+            // Формирование числителя
+            for (int i = 0; i < numeratorCoeffs.Count; i++)
+            {
+                double coef = numeratorCoeffs[i] * Math.Pow(tCoef, numeratorCoeffs.Count - 1 - i);
+                int power = numeratorCoeffs.Count - 1 - i;
+
+                if (coef == 0) continue;
+
+                if (numerator.Length > 0)
+                    numerator.Append(coef > 0 ? " + " : " - ");
+                else if (coef < 0)
+                    numerator.Append("-");
+
+                double absCoef = Math.Abs(coef);
+                if (absCoef != 1 || power == 0)
+                    numerator.Append(absCoef);
+
+                if (power > 0)
+                    numerator.Append("s");
+                if (power > 1)
+                    numerator.Append("^" + power);
+            }
+
+            // Формирование знаменателя
+            for (int i = 0; i < denominatorCoeffs.Count; i++)
+            {
+                double coef = denominatorCoeffs[i] * Math.Pow(tCoef, denominatorCoeffs.Count - 1 - i);
+                int power = denominatorCoeffs.Count - 1 - i;
+
+                if (coef == 0) continue;
+
+                if (denominator.Length > 0)
+                    denominator.Append(coef > 0 ? " + " : " - ");
+                else if (coef < 0)
+                    denominator.Append("-");
+
+                double absCoef = Math.Abs(coef);
+                if (absCoef != 1 || power == 0)
+                    denominator.Append(absCoef);
+
+                if (power > 0)
+                    denominator.Append("s");
+                if (power > 1)
+                    denominator.Append("^" + power);
+            }
+
+            // Формирование итогового результата
+            if (denominatorCoeffs.Count == 1 && denominatorCoeffs[0] == 1)
+            {
+                return numerator.ToString();
+            }
+            else if (denominator.Length > 0)
+            {
+                return numerator.Length > 0
+                    ? $"{numerator} / ({denominator})"
+                    : $"1 / ({denominator})";
+            }
+            else
+            {
+                return numerator.ToString();
+            }
         }
     }
 }

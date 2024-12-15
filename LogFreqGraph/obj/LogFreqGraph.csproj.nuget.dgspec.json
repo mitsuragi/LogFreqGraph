@@ -44,6 +44,16 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "LightInject": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "LiveChartsCore.SkiaSharpView.WinForms": {
+              "target": "Package",
+              "version": "[2.0.0-rc4.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

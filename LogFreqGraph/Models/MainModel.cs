@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LogFreqGraph.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,20 +7,10 @@ using System.Threading.Tasks;
 
 namespace LogFreqGraph.Models
 {
-    internal class MainModel
+    public class MainModel : IModel
     {
         private List<TransferFunction> functionsList;
         private double kCoef = 1;
-        public List<TransferFunction> FunctionsList
-        {
-            get => functionsList;
-            set => functionsList = value;
-        }
-        public double KCoef
-        {
-            get => kCoef;
-            set => kCoef = value;
-        }
 
         public MainModel()
         {
@@ -32,14 +23,24 @@ namespace LogFreqGraph.Models
             functionsList.Add(function);
         }
 
-        public void RemoveTransferFunction(TransferFunction function)
-        {
-            functionsList.Remove(function);
-        }
-
         public void RemoveTransferFunctionAt(int index)
         {
             functionsList.RemoveAt(index);
+        }
+
+        public List<TransferFunction> GetFunctionsList()
+        {
+            return functionsList;
+        }
+
+        public double GetCoefficientK()
+        {
+            return kCoef;
+        }
+
+        public void SetCoefficientK(double value)
+        {
+            kCoef = value;
         }
     }
 }

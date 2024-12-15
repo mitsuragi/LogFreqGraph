@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace LogFreqGraph.Interfaces
 {
-    internal interface IPresenter
+    public interface IPresenter
     {
         void Run();
     }
+    public interface IPresenter<in TArg>
+    {
+        void Run(TArg argument);
+    }
+
 }

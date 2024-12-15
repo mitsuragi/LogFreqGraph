@@ -1,10 +1,12 @@
+using LogFreqGraph.Common;
+using LogFreqGraph.Interfaces;
 using LogFreqGraph.Models;
 using LogFreqGraph.Presenters;
 using LogFreqGraph.Views;
 
 namespace LogFreqGraph
 {
-    internal static class Program
+    public static class Program
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -14,10 +16,14 @@ namespace LogFreqGraph
         {
             ApplicationConfiguration.Initialize();
 
-            MainModel model = new MainModel();
+            var controller = new ApplicationController(new LightInjectAdapter())
+                .RegisterView<IMainView, MainForm>()
+                .RegisterView<IAddFunctionView, AddFunctionForm>()
+                .RegisterView<IGraphView, GraphForm>()
+                .RegisterModel<IModel, MainModel>()
+                .RegisterInstance(new ApplicationContext());
 
-            var presenter = new MainPresenter(new MainForm(), new GraphForm(), model);
-            presenter.Run();
+            controller.Run<MainPresenter>();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LogFreqGraph.Interfaces
 {
-    internal interface IView
+    public interface IView
     {
         void Show();
         void Close();

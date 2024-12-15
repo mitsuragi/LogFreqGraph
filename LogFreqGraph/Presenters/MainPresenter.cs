@@ -1,58 +1,43 @@
-﻿using LogFreqGraph.Interfaces;
+﻿using LogFreqGraph.Common;
+using LogFreqGraph.Interfaces;
 using LogFreqGraph.Models;
 
 namespace LogFreqGraph.Presenters
 {
-    internal class MainPresenter : IPresenter
+    public class MainPresenter : BasePresenter<IMainView>
     {
-        private readonly IMainView mainView;
-        private readonly IGraphView graphView;
+        private IModel model;
 
-        private readonly IViewFactory viewFactory;
-
-        private MainModel model;
-
-        public MainPresenter(IMainView _mainView, IGraphView _graphView, MainModel _model)
+        public MainPresenter(IApplicationController _controller, IMainView _view, IModel _model)
+            : base(_controller, _view)
         {
-            viewFactory = new ViewFactory();
-
-            mainView = _mainView;
-            mainView.AddTransferFunction += AddTransferFunction;
-            mainView.RemoveTransferFunction += RemoveTransferFunction;
-            mainView.RefreshCoefficientK += RefreshCoefficientK;
-            mainView.PlotGraph += PlotGraph;
-
-            graphView = _graphView;
-
             model = _model;
+
+            View.AddTransferFunction += AddTransferFunction;
+            View.RemoveTransferFunction += RemoveTransferFunction;
+            View.RefreshCoefficientK += RefreshCoefficientK;
+            View.PlotGraph += PlotGraph;
 
             RefreshView();
         }
 
-        public void Run()
-        {
-            mainView.Show();
-        }
-
         private void AddTransferFunction()
         {
-            var addFunctionPresenter = new AddFunctionPresenter(viewFactory.CreateAddFunctionView(), model);
-
-            addFunctionPresenter.Run();
+            Controller.Run<AddFunctionPresenter, IModel>(model);
 
             RefreshView();
         }
 
         private void RefreshCoefficientK()
         {
-            model.KCoef = mainView.GetCoefficientK();
+            model.SetCoefficientK(View.GetCoefficientK());
 
             RefreshView();
         }
 
         private void RemoveTransferFunction()
         {
-            int index = mainView.GetSelectedIndex();
+            int index = View.GetSelectedIndex();
             if (index != -1)
             {
                 model.RemoveTransferFunctionAt(index);
@@ -68,8 +53,8 @@ namespace LogFreqGraph.Presenters
         
         private void RefreshView()
         {
-            mainView.SetCoefficientK(model.KCoef);
-            mainView.SetFunctionsList(model.FunctionsList);
+            View.SetCoefficientK(model.GetCoefficientK());
+            View.SetFunctionsList(model.GetFunctionsList());
         }
     }
 }
