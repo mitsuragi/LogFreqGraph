@@ -48,7 +48,7 @@ namespace LogFreqGraph.Presenters
 
         private void PlotGraph()
         {
-            throw new NotImplementedException();
+            Controller.Run<GraphPresenter, IModel>(model);
         }
         
         private void RefreshView()

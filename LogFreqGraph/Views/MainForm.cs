@@ -22,10 +22,10 @@ namespace LogFreqGraph.Views
 
             InitializeComponent();
 
+            graphBtn.Click += (sender, args) => Invoke(PlotGraph);
             addBtn.Click += (sender, args) => Invoke(AddTransferFunction);
             kCoefRefreshBtn.Click += (sender, args) => Invoke(RefreshCoefficientK);
             removeBtn.Click += (sender, args) => Invoke(RemoveTransferFunction);
-            graphBtn.Click += (sender, args) => Invoke(PlotGraph);
         }
 
         #region "IMainView interface implementation"
@@ -66,7 +66,7 @@ namespace LogFreqGraph.Views
         public new void Show()
         {
             context.MainForm = this;
-            Application.Run(this);
+            Application.Run(context);
         }
 
         #endregion

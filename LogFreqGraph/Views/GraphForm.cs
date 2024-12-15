@@ -18,8 +18,9 @@ namespace LogFreqGraph.Views
         public GraphForm(ApplicationContext _context)
         {
             context = _context;
-
             InitializeComponent();
+
+            returnBtn.Click += (sender, args) => Invoke(Return);
         }
 
         #region "IGraphView Interface Implementation"
@@ -37,8 +38,12 @@ namespace LogFreqGraph.Views
 
         public new void Show()
         {
-            context.MainForm = this;
-            base.Show();
+            ShowDialog();
+        }
+
+        public new void Close()
+        {
+            Dispose();
         }
 
         #endregion

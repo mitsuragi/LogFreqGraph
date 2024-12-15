@@ -1,9 +1,5 @@
 ﻿using LogFreqGraph.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using LogFreqGraph.Common;
 
 namespace LogFreqGraph.Interfaces
 {
@@ -14,5 +10,6 @@ namespace LogFreqGraph.Interfaces
         List<TransferFunction> GetFunctionsList();
         double GetCoefficientK();
         void SetCoefficientK(double value);
+        List<Point2D> CalculateLACH();
     }
 }
