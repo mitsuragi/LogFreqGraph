@@ -10,6 +10,6 @@ namespace LogFreqGraph.Interfaces
         List<TransferFunction> GetFunctionsList();
         double GetCoefficientK();
         void SetCoefficientK(double value);
-        List<Point2D> CalculateLACH();
+        List<LogarithmicPoint> CalculateLACH();
     }
 }

@@ -44,44 +44,49 @@ namespace LogFreqGraph.Models
             kCoef = value;
         }
 
-        public List<Point2D> CalculateLACH()
+        public List<LogarithmicPoint> CalculateLACH()
         {
-            // Определяем диапазон частот (например, от 10^(-2) до 10^2)
-            double minFrequency = 0.01;
-            double maxFrequency = 100;
-            int pointsCount = 1000; // Количество точек для вычислений
+            List<LogarithmicPoint> lachList = [];
 
-            // Логарифмический шаг для частот
-            List<double> frequencies = Enumerable.Range(0, pointsCount)
-                .Select(i => minFrequency * Math.Pow(maxFrequency / minFrequency, (double)i / (pointsCount - 1)))
-                .ToList();
-
-            // Результат: список точек (частота, амплитуда)
-            List<Point2D> lachPoints = new List<Point2D>();
-
-            // Вычисляем амплитуду для каждой частоты
-            foreach (double omega in frequencies)
+            Dictionary<double, TransferFunction > freqFuncDict = new Dictionary<double, TransferFunction>();
+            List<double> frequencies = [];
+            int incline = 0;
+            
+            for (int i = 0; i < functionsList.Count; i++)
             {
-                double logAmplitude = 20 * Math.Log10(kCoef); // Начальная амплитуда с учетом коэффициента k
+                frequencies.Add(1 / functionsList[i].TCoef);
 
-                // Суммируем вклад от каждой передаточной функции
-                foreach (var tf in functionsList)
-                {
-                    double numerator = tf.NumeratorCoeffs
-                        .Select((coef, index) => coef * Math.Pow(omega, tf.NumeratorCoeffs.Count - 1 - index))
-                        .Sum();
-                    double denominator = tf.DenominatorCoeffs
-                        .Select((coef, index) => coef * Math.Pow(omega, tf.DenominatorCoeffs.Count - 1 - index))
-                        .Sum();
-
-                    double magnitude = Math.Abs(numerator / denominator); // Модуль частотной характеристики
-                    logAmplitude += 20 * Math.Log10(magnitude); // Перевод в децибелы
-                }
-
-                lachPoints.Add(new Point2D(omega, logAmplitude));
+                freqFuncDict.Add(frequencies[i], functionsList[i]);
             }
 
-            return lachPoints;
+            frequencies.Sort();
+            frequencies.Add(frequencies[^1] * 2.5);
+
+            double Y = 20 * Math.Log10(kCoef);
+
+            lachList.Add(new LogarithmicPoint(0, Y));
+            lachList.Add(new LogarithmicPoint(frequencies[0], Y));
+            
+            for (int i = 1; i < frequencies.Count; i++)
+            {
+                double omega = frequencies[i - 1];
+                TransferFunction func = freqFuncDict.GetValueOrDefault(omega);
+
+                incline += (func.NumeratorCoeffs.Count - func.DenominatorCoeffs.Count) * 20;
+                
+                if (incline > 0)
+                {
+                    Y += Math.Abs(incline * (Math.Log10(frequencies[i - 1]) - Math.Log10(frequencies[i])));
+                }
+                else if (incline < 0)
+                {
+                    Y -= Math.Abs(incline * (Math.Log10(frequencies[i]) - Math.Log10(frequencies[i - 1])));
+                }
+
+                lachList.Add(new LogarithmicPoint(frequencies[i], Y));
+            }
+
+            return lachList;
         }
     }
 }

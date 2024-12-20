@@ -1,4 +1,5 @@
 ﻿using LiveChartsCore.Easing;
+using LogFreqGraph.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace LogFreqGraph.Interfaces
 {
     public interface IGraphView : IView
     {
-        void SetCharts();
+        void SetCharts(List<LogarithmicPoint> points);
 
         event Action Return;
     }

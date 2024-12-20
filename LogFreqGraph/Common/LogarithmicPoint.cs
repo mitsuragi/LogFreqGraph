@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LogFreqGraph.Common
 {
-    public struct Point2D
+    public class LogarithmicPoint
     {
         public double X { get; set; }
         public double Y { get; set; }
 
-        public Point2D(double x, double y)
+        public LogarithmicPoint(double x, double y)
         {
             X = x;
             Y = y;

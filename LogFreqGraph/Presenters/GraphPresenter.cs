@@ -22,7 +22,7 @@ namespace LogFreqGraph.Presenters
         {
             model = argument;
 
-            View.SetCharts();
+            View.SetCharts(model.CalculateLACH());
 
             View.Show();
         }

@@ -1,13 +1,8 @@
-﻿using LogFreqGraph.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using LiveChartsCore;
+using LiveChartsCore.SkiaSharpView;
+using LiveChartsCore.SkiaSharpView.SKCharts;
+using LogFreqGraph.Common;
+using LogFreqGraph.Interfaces;
 
 namespace LogFreqGraph.Views
 {
@@ -27,9 +22,19 @@ namespace LogFreqGraph.Views
 
         public event Action Return;
 
-        public void SetCharts()
+        public void SetCharts(List<LogarithmicPoint> points)
         {
-            throw new NotImplementedException();
+            Graph.Series = new ISeries[]
+            {
+                new LineSeries<LogarithmicPoint>
+                {
+                    Mapping = (logPoint, point) => new (logPoint.X, logPoint.Y),
+                    Values = points,
+                    LineSmoothness = 0,
+                    Fill = null,
+                    XToolTipLabelFormatter = (chartPoint) => $"X: {chartPoint.Coordinate.SecondaryValue}, Y: {chartPoint.Coordinate.PrimaryValue}"
+                }
+            };
         }
 
         #endregion
