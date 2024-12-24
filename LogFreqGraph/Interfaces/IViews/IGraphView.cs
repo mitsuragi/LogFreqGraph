@@ -13,5 +13,7 @@ namespace LogFreqGraph.Interfaces
         void SetCharts(List<LogarithmicPoint> points);
 
         event Action Return;
+        event Action Questions;
+        event Action UpdateAutoLimits;
     }
 }

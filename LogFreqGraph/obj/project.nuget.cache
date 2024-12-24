@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "n0qR0jp8hZ0=",
+  "dgSpecHash": "L5MIALOSP1g=",
   "success": true,
   "projectFilePath": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\LogFreqGraph.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\tapok\\.nuget\\packages\\livechartscore.skiasharpview.winforms\\2.0.0-rc4.5\\livechartscore.skiasharpview.winforms.2.0.0-rc4.5.nupkg.sha512",
     "C:\\Users\\tapok\\.nuget\\packages\\opentk\\3.1.0\\opentk.3.1.0.nupkg.sha512",
     "C:\\Users\\tapok\\.nuget\\packages\\opentk.glcontrol\\3.1.0\\opentk.glcontrol.3.1.0.nupkg.sha512",
+    "C:\\Users\\tapok\\.nuget\\packages\\pdfiumviewer.updated\\2.14.4\\pdfiumviewer.updated.2.14.4.nupkg.sha512",
     "C:\\Users\\tapok\\.nuget\\packages\\skiasharp\\3.0.0-preview.4.1\\skiasharp.3.0.0-preview.4.1.nupkg.sha512",
     "C:\\Users\\tapok\\.nuget\\packages\\skiasharp.harfbuzz\\2.88.8\\skiasharp.harfbuzz.2.88.8.nupkg.sha512",
     "C:\\Users\\tapok\\.nuget\\packages\\skiasharp.nativeassets.macos\\3.0.0-preview.4.1\\skiasharp.nativeassets.macos.3.0.0-preview.4.1.nupkg.sha512",

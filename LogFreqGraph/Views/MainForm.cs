@@ -26,6 +26,7 @@ namespace LogFreqGraph.Views
             addBtn.Click += (sender, args) => Invoke(AddTransferFunction);
             kCoefRefreshBtn.Click += (sender, args) => Invoke(RefreshCoefficientK);
             removeBtn.Click += (sender, args) => Invoke(RemoveTransferFunction);
+            aboutBtn.Click += (sender, args) => Invoke(About);
         }
 
         #region "IMainView interface implementation"
@@ -34,6 +35,7 @@ namespace LogFreqGraph.Views
         public event Action RefreshCoefficientK;
         public event Action RemoveTransferFunction;
         public event Action PlotGraph;
+        public event Action About;
 
         public int GetSelectedIndex()
         {
@@ -41,7 +43,17 @@ namespace LogFreqGraph.Views
         }
         public double GetCoefficientK()
         {
-            return Convert.ToDouble(kTextBox.Text);
+            double value = 0;
+            try
+            {
+                value = Convert.ToDouble(kTextBox.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Введено неверное значение", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return double.NaN;
+            }
+            return value;
         }
 
         public void SetCoefficientK(double value)

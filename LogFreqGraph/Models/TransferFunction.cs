@@ -11,6 +11,8 @@ namespace LogFreqGraph.Models
         private List<double> numeratorCoeffs;
         private List<double> denominatorCoeffs;
         private double tCoef;
+        private bool isIntegral;
+        private bool isPureDif;
 
         public List<double> NumeratorCoeffs
         {
@@ -27,12 +29,30 @@ namespace LogFreqGraph.Models
             get => tCoef;
             set => tCoef = value;
         }
+        public bool IsIntegral
+        {
+            get => isIntegral;
+            set => isIntegral = value;
+        }
+        public bool IsPureDif
+        {
+            get => isPureDif;
+            set => isPureDif = value;
+        }
 
         public TransferFunction(List<double> nc, List<double> dc, double t)
         {
             numeratorCoeffs = nc;
             denominatorCoeffs = dc;
             tCoef = t;
+            if (nc.Count == 1 && IsOnlyOneNotZero(dc) == true)
+            {
+                isIntegral = true;
+            }
+            if (dc.Count == 1 && IsOnlyOneNotZero(nc) == true)
+            {
+                isPureDif = true;
+            }
         }
 
         public override string ToString()
@@ -100,6 +120,27 @@ namespace LogFreqGraph.Models
             else
             {
                 return numerator.ToString();
+            }
+        }
+
+        private bool IsOnlyOneNotZero(List<double> coeffs)
+        {
+            if (coeffs.Count == 1) return true;
+
+            int counter = 0;
+            foreach ( double coefficient in coeffs)
+            {
+                if (coefficient == 0) continue;
+                counter++;
+            }
+
+            if (counter > 1)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
     }

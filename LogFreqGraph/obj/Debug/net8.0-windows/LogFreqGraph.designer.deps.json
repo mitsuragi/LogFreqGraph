@@ -106,6 +106,22 @@
           }
         }
       },
+      "PdfiumViewer.Updated/2.14.4": {
+        "runtime": {
+          "lib/net6.0-windows7.0/PdfiumViewer.dll": {
+            "assemblyVersion": "2.14.4.0",
+            "fileVersion": "2.14.4.0"
+          }
+        },
+        "resources": {
+          "lib/net6.0-windows7.0/de/PdfiumViewer.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/nl/PdfiumViewer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
       "SkiaSharp/3.0.0-preview.4.1": {
         "dependencies": {
           "SkiaSharp.NativeAssets.Win32": "3.0.0-preview.4.1",
@@ -248,6 +264,13 @@
       "sha512": "sha512-BjDzF+MhJd2LaZYzkXmgkzzXgHAko/Iur4rGy6+DPdZA1Jcc0X6jXZ6QsUsjlLRNzgevO7uAj2h1TqX7sguaYg==",
       "path": "opentk.glcontrol/3.1.0",
       "hashPath": "opentk.glcontrol.3.1.0.nupkg.sha512"
+    },
+    "PdfiumViewer.Updated/2.14.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pY4V/lkM/24/DcvfLWdT41nY8fM61DebWp81Wt8HLbJShOUWZnV9h/e1pIIrxT6BTJNna9ZH0Zd0zaHfod3hPw==",
+      "path": "pdfiumviewer.updated/2.14.4",
+      "hashPath": "pdfiumviewer.updated.2.14.4.nupkg.sha512"
     },
     "SkiaSharp/3.0.0-preview.4.1": {
       "type": "package",

@@ -38,3 +38,6 @@ C:\Users\tapok\source\repos\LogFreqGraph\LogFreqGraph\bin\Debug\net8.0-windows\r
 C:\Users\tapok\source\repos\LogFreqGraph\LogFreqGraph\bin\Debug\net8.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
 C:\Users\tapok\source\repos\LogFreqGraph\LogFreqGraph\bin\Debug\net8.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\tapok\source\repos\LogFreqGraph\LogFreqGraph\bin\Debug\net8.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\tapok\source\repos\LogFreqGraph\LogFreqGraph\bin\Debug\net8.0-windows\PdfiumViewer.dll
+C:\Users\tapok\source\repos\LogFreqGraph\LogFreqGraph\bin\Debug\net8.0-windows\de\PdfiumViewer.resources.dll
+C:\Users\tapok\source\repos\LogFreqGraph\LogFreqGraph\bin\Debug\net8.0-windows\nl\PdfiumViewer.resources.dll

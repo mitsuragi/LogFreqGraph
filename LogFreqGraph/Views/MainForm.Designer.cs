@@ -38,13 +38,14 @@
             graphBtn = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
             functionsListBox = new ListBox();
+            aboutBtn = new Button();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // kCoefRefreshBtn
             // 
             kCoefRefreshBtn.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            kCoefRefreshBtn.Location = new Point(264, 142);
+            kCoefRefreshBtn.Location = new Point(264, 135);
             kCoefRefreshBtn.Name = "kCoefRefreshBtn";
             kCoefRefreshBtn.Size = new Size(126, 29);
             kCoefRefreshBtn.TabIndex = 0;
@@ -54,7 +55,7 @@
             // addBtn
             // 
             addBtn.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            addBtn.Location = new Point(3, 35);
+            addBtn.Location = new Point(3, 33);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(124, 54);
             addBtn.TabIndex = 1;
@@ -77,9 +78,9 @@
             // 
             kInfoLabel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             tableLayoutPanel1.SetColumnSpan(kInfoLabel, 3);
-            kInfoLabel.Location = new Point(3, 94);
+            kInfoLabel.Location = new Point(3, 90);
             kInfoLabel.Name = "kInfoLabel";
-            kInfoLabel.Size = new Size(387, 31);
+            kInfoLabel.Size = new Size(387, 30);
             kInfoLabel.TabIndex = 4;
             kInfoLabel.Text = "Текущее значение коэффициента k:";
             kInfoLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -87,7 +88,7 @@
             // kLabel
             // 
             kLabel.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            kLabel.Location = new Point(3, 133);
+            kLabel.Location = new Point(3, 126);
             kLabel.Name = "kLabel";
             kLabel.Size = new Size(124, 47);
             kLabel.TabIndex = 5;
@@ -97,7 +98,7 @@
             // kTextBox
             // 
             kTextBox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            kTextBox.Location = new Point(133, 143);
+            kTextBox.Location = new Point(133, 136);
             kTextBox.Name = "kTextBox";
             kTextBox.Size = new Size(125, 27);
             kTextBox.TabIndex = 6;
@@ -105,7 +106,7 @@
             // removeBtn
             // 
             removeBtn.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            removeBtn.Location = new Point(133, 36);
+            removeBtn.Location = new Point(133, 33);
             removeBtn.Name = "removeBtn";
             removeBtn.Size = new Size(125, 53);
             removeBtn.TabIndex = 13;
@@ -115,7 +116,7 @@
             // graphBtn
             // 
             graphBtn.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            graphBtn.Location = new Point(264, 36);
+            graphBtn.Location = new Point(264, 33);
             graphBtn.Name = "graphBtn";
             graphBtn.Size = new Size(126, 53);
             graphBtn.TabIndex = 14;
@@ -139,14 +140,16 @@
             tableLayoutPanel1.Controls.Add(kInfoLabel, 0, 2);
             tableLayoutPanel1.Controls.Add(kTextBox, 1, 3);
             tableLayoutPanel1.Controls.Add(functionsListBox, 0, 4);
+            tableLayoutPanel1.Controls.Add(aboutBtn, 2, 5);
             tableLayoutPanel1.Location = new Point(-1, -2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 4;
+            tableLayoutPanel1.RowCount = 6;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 5F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 5F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 70F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 35F));
             tableLayoutPanel1.Size = new Size(393, 637);
             tableLayoutPanel1.TabIndex = 16;
             // 
@@ -155,10 +158,20 @@
             functionsListBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tableLayoutPanel1.SetColumnSpan(functionsListBox, 3);
             functionsListBox.FormattingEnabled = true;
-            functionsListBox.Location = new Point(3, 191);
+            functionsListBox.Location = new Point(3, 183);
             functionsListBox.Name = "functionsListBox";
-            functionsListBox.Size = new Size(387, 424);
+            functionsListBox.Size = new Size(387, 404);
             functionsListBox.TabIndex = 17;
+            // 
+            // aboutBtn
+            // 
+            aboutBtn.Anchor = AnchorStyles.Right;
+            aboutBtn.Location = new Point(296, 605);
+            aboutBtn.Name = "aboutBtn";
+            aboutBtn.Size = new Size(94, 27);
+            aboutBtn.TabIndex = 18;
+            aboutBtn.Text = "Справка";
+            aboutBtn.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -167,7 +180,7 @@
             ClientSize = new Size(392, 634);
             Controls.Add(tableLayoutPanel1);
             Name = "MainForm";
-            Text = "MainForm";
+            Text = "Главное окно";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
@@ -186,5 +199,6 @@
         private Button graphBtn;
         private TableLayoutPanel tableLayoutPanel1;
         private ListBox functionsListBox;
+        private Button aboutBtn;
     }
 }

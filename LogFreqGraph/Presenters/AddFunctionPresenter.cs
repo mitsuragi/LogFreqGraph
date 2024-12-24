@@ -27,9 +27,25 @@ namespace LogFreqGraph.Presenters
 
         private void AddTransferFunction()
         {
-            List<double> enumeratorCoefs = View.GetEnumeratorCoefficients();
-            List<double> denominatorCoefs = View.GetDenominatorCoefficients();
-            double t = View.GetCoefficientT();
+            List<double> enumeratorCoefs;
+            List<double> denominatorCoefs;
+            double t;
+
+            try
+            {
+                enumeratorCoefs = View.GetEnumeratorCoefficients();
+                denominatorCoefs = View.GetDenominatorCoefficients();
+                t = View.GetCoefficientT();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Введено неверное значение", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //if (t == double.NaN || enumeratorCoefs.Count == 0 || denominatorCoefs.Count == 0)
+            //{
+            //    return;
+            //}
 
             TransferFunction tf = new TransferFunction(enumeratorCoefs, denominatorCoefs, t);
             model.AddTransferFunction(tf);

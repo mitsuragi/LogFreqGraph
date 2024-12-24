@@ -17,6 +17,7 @@ namespace LogFreqGraph.Presenters
             View.RemoveTransferFunction += RemoveTransferFunction;
             View.RefreshCoefficientK += RefreshCoefficientK;
             View.PlotGraph += PlotGraph;
+            View.About += OnAbout;
 
             RefreshView();
         }
@@ -48,7 +49,19 @@ namespace LogFreqGraph.Presenters
 
         private void PlotGraph()
         {
-            Controller.Run<GraphPresenter, IModel>(model);
+            if (model.GetFunctionsList().Count > 0)
+            {
+                Controller.Run<GraphPresenter, IModel>(model);
+            }
+            else
+            {
+                MessageBox.Show("Список функций пуст", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void OnAbout()
+        {
+            MessageBox.Show("Работу выполнил студент 424 группы\nГубкин Максим Романович", "Справка", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         
         private void RefreshView()

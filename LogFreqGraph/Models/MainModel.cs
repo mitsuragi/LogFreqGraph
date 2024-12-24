@@ -48,25 +48,53 @@ namespace LogFreqGraph.Models
         {
             List<LogarithmicPoint> lachList = [];
 
-            Dictionary<double, TransferFunction > freqFuncDict = new Dictionary<double, TransferFunction>();
+            Dictionary<double, TransferFunction> freqFuncDict = [];
             List<double> frequencies = [];
             int incline = 0;
+            int n = 0;
             
             for (int i = 0; i < functionsList.Count; i++)
             {
-                frequencies.Add(1 / functionsList[i].TCoef);
+                if (functionsList[i].IsPureDif)
+                {
+                    n += Math.Abs(functionsList[i].NumeratorCoeffs.Count - functionsList[i].DenominatorCoeffs.Count);
+                    continue;
+                }
+                if (functionsList[i].IsIntegral)
+                {
+                    n -= Math.Abs(functionsList[i].NumeratorCoeffs.Count - functionsList[i].DenominatorCoeffs.Count);
+                    continue;
+                }
+                double frequency = 1 / functionsList[i].TCoef;
 
-                freqFuncDict.Add(frequencies[i], functionsList[i]);
+                frequencies.Add(frequency);
+
+                freqFuncDict.Add(frequency, functionsList[i]);
             }
 
             frequencies.Sort();
-            frequencies.Add(frequencies[^1] * 2.5);
+            frequencies.Add(frequencies[^1] * 1.5);
 
             double Y = 20 * Math.Log10(kCoef);
 
             lachList.Add(new LogarithmicPoint(0, Y));
+            incline += 20 * n;
+
+            if (incline != 0)
+            {
+                if (frequencies[0] == 1)
+                {
+                    Y += incline;
+                }
+                else
+                {
+                    Y += incline * Math.Log10(frequencies[0]);
+                }
+            }
+
             lachList.Add(new LogarithmicPoint(frequencies[0], Y));
-            
+
+
             for (int i = 1; i < frequencies.Count; i++)
             {
                 double omega = frequencies[i - 1];
@@ -76,11 +104,11 @@ namespace LogFreqGraph.Models
                 
                 if (incline > 0)
                 {
-                    Y += Math.Abs(incline * (Math.Log10(frequencies[i - 1]) - Math.Log10(frequencies[i])));
+                    Y -= incline * (Math.Log10(frequencies[i - 1]) - Math.Log10(frequencies[i]));
                 }
                 else if (incline < 0)
                 {
-                    Y -= Math.Abs(incline * (Math.Log10(frequencies[i]) - Math.Log10(frequencies[i - 1])));
+                    Y += incline * (Math.Log10(frequencies[i]) - Math.Log10(frequencies[i - 1]));
                 }
 
                 lachList.Add(new LogarithmicPoint(frequencies[i], Y));

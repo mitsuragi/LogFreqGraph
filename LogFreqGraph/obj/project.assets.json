@@ -150,6 +150,30 @@
           }
         }
       },
+      "PdfiumViewer.Updated/2.14.4": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/PdfiumViewer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/PdfiumViewer.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ],
+        "resource": {
+          "lib/net6.0-windows7.0/de/PdfiumViewer.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/nl/PdfiumViewer.resources.dll": {
+            "locale": "nl"
+          }
+        }
+      },
       "SkiaSharp/3.0.0-preview.4.1": {
         "type": "package",
         "dependencies": {
@@ -501,6 +525,33 @@
         "opentk.glcontrol.nuspec"
       ]
     },
+    "PdfiumViewer.Updated/2.14.4": {
+      "sha512": "pY4V/lkM/24/DcvfLWdT41nY8fM61DebWp81Wt8HLbJShOUWZnV9h/e1pIIrxT6BTJNna9ZH0Zd0zaHfod3hPw==",
+      "type": "package",
+      "path": "pdfiumviewer.updated/2.14.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/PdfiumViewer.dll",
+        "lib/net20/PdfiumViewer.xml",
+        "lib/net20/de/PdfiumViewer.resources.dll",
+        "lib/net20/nl/PdfiumViewer.resources.dll",
+        "lib/net45/PdfiumViewer.dll",
+        "lib/net45/PdfiumViewer.xml",
+        "lib/net45/de/PdfiumViewer.resources.dll",
+        "lib/net45/nl/PdfiumViewer.resources.dll",
+        "lib/net6.0-windows7.0/PdfiumViewer.dll",
+        "lib/net6.0-windows7.0/PdfiumViewer.xml",
+        "lib/net6.0-windows7.0/de/PdfiumViewer.resources.dll",
+        "lib/net6.0-windows7.0/nl/PdfiumViewer.resources.dll",
+        "lib/netcoreapp3.1/PdfiumViewer.dll",
+        "lib/netcoreapp3.1/PdfiumViewer.xml",
+        "lib/netcoreapp3.1/de/PdfiumViewer.resources.dll",
+        "lib/netcoreapp3.1/nl/PdfiumViewer.resources.dll",
+        "pdfiumviewer.updated.2.14.4.nupkg.sha512",
+        "pdfiumviewer.updated.nuspec"
+      ]
+    },
     "SkiaSharp/3.0.0-preview.4.1": {
       "sha512": "u2xQ1ASVeDsmwLwr1irzeAK70UePuHHgv3dBMaBmLpa/8MI6NefbZXs0M4aoK12JK1YfpLd0s//w7vltInR2DA==",
       "type": "package",
@@ -673,7 +724,8 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "LightInject >= 7.0.1",
-      "LiveChartsCore.SkiaSharpView.WinForms >= 2.0.0-rc4.5"
+      "LiveChartsCore.SkiaSharpView.WinForms >= 2.0.0-rc4.5",
+      "PdfiumViewer.Updated >= 2.14.4"
     ]
   },
   "packageFolders": {
@@ -727,6 +779,10 @@
           "LiveChartsCore.SkiaSharpView.WinForms": {
             "target": "Package",
             "version": "[2.0.0-rc4.5, )"
+          },
+          "PdfiumViewer.Updated": {
+            "target": "Package",
+            "version": "[2.14.4, )"
           }
         },
         "imports": [

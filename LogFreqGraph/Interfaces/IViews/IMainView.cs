@@ -14,5 +14,6 @@ namespace LogFreqGraph.Interfaces
         event Action RemoveTransferFunction;
         event Action RefreshCoefficientK;
         event Action PlotGraph;
+        event Action About;
     }
 }
