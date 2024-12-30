@@ -58,7 +58,7 @@ namespace LogFreqGraph.Views
 
         public void SetCoefficientK(double value)
         {
-            kInfoLabel.Text = $"Текущее значение коэффициента k: {value}";
+            kInfoLabel.Text = $"Текущее значение коэффициента усиления k: {value}";
         }
 
         void IMainView.SetFunctionsList(List<TransferFunction> list)

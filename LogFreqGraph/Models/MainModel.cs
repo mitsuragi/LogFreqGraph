@@ -71,10 +71,13 @@ namespace LogFreqGraph.Models
 
                 freqFuncDict.Add(frequency, functionsList[i]);
             }
-
-            frequencies.Sort();
-            frequencies.Add(frequencies[^1] * 1.5);
-
+            
+            if (frequencies.Count > 0)
+            {
+                frequencies.Sort();
+                frequencies.Add(frequencies[^1] * 1.5);
+            }
+            
             double Y = 20 * Math.Log10(kCoef);
 
             lachList.Add(new LogarithmicPoint(0, Y));
@@ -82,17 +85,28 @@ namespace LogFreqGraph.Models
 
             if (incline != 0)
             {
-                if (frequencies[0] == 1)
+                if (frequencies.Count != 0 && frequencies[0] == 1)
                 {
                     Y += incline;
                 }
+                else if (frequencies.Count != 0)
+                {
+                    Y += incline * Math.Abs(Math.Log10(frequencies[0]));
+                }
                 else
                 {
-                    Y += incline * Math.Log10(frequencies[0]);
+                    Y += incline;
                 }
             }
 
-            lachList.Add(new LogarithmicPoint(frequencies[0], Y));
+            if (frequencies.Count != 0)
+            {
+                lachList.Add(new LogarithmicPoint(frequencies[0], Y));
+            }
+            else
+            {
+                lachList.Add(new LogarithmicPoint(1, Y));
+            }
 
 
             for (int i = 1; i < frequencies.Count; i++)

@@ -82,7 +82,7 @@
             kInfoLabel.Name = "kInfoLabel";
             kInfoLabel.Size = new Size(387, 30);
             kInfoLabel.TabIndex = 4;
-            kInfoLabel.Text = "Текущее значение коэффициента k:";
+            kInfoLabel.Text = "Текущее значение коэффициента усиления k:";
             kInfoLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // kLabel

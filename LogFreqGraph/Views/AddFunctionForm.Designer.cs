@@ -124,11 +124,11 @@
             // 
             label3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Location = new Point(3, 265);
+            label3.Location = new Point(3, 255);
             label3.Name = "label3";
-            label3.Size = new Size(139, 40);
+            label3.Size = new Size(139, 60);
             label3.TabIndex = 7;
-            label3.Text = "Значение коэффициента T";
+            label3.Text = "Значение постоянной времени T";
             // 
             // enumeratorLabel
             // 

@@ -1,12 +1,100 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\logfreqgraph\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\models\\mainmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\models\\mainmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\views\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\views\\graphform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|c:\\users\\tapok\\source\\repos\\logfreqgraph\\logfreqgraph\\models\\transferfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF5B07FD-C6BC-4AE6-8AF3-4661158B1B16}|LogFreqGraph\\LogFreqGraph.csproj|solutionrelative:logfreqgraph\\models\\transferfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.cs",
+              "RelativeToolTip": "LogFreqGraph\\Views\\MainForm.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T13:29:32.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\MainForm.cs [Design]",
+              "RelativeToolTip": "LogFreqGraph\\Views\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T13:29:05.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GraphForm.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\GraphForm.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Views\\GraphForm.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Views\\GraphForm.cs",
+              "RelativeToolTip": "LogFreqGraph\\Views\\GraphForm.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAowIAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T15:32:51.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TransferFunction.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Models\\TransferFunction.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Models\\TransferFunction.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Models\\TransferFunction.cs",
+              "RelativeToolTip": "LogFreqGraph\\Models\\TransferFunction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T13:06:17.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainModel.cs",
+              "DocumentMoniker": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Models\\MainModel.cs",
+              "RelativeDocumentMoniker": "LogFreqGraph\\Models\\MainModel.cs",
+              "ToolTip": "C:\\Users\\tapok\\source\\repos\\LogFreqGraph\\LogFreqGraph\\Models\\MainModel.cs",
+              "RelativeToolTip": "LogFreqGraph\\Models\\MainModel.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAwwFcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T13:06:01.119Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

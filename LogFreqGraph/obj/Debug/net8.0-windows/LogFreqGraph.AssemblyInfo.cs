@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogFreqGraph")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c91d6dee051fe05190d9ab607d1aefe09afc8f7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fb1c64da7d550239000ad0a95ebfa7c16f8481a")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogFreqGraph")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogFreqGraph")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
