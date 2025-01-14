@@ -77,7 +77,7 @@ namespace LogFreqGraph.Presenters
 
         private string GetRandomQuestions()
         {
-            List<string> randomList = [];
+            List<string> randomList = new List<string>();
             Random random = new Random();
 
             randomList = questions.OrderBy(x => random.Next()).Take(7).ToList();

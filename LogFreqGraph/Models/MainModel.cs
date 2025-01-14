@@ -46,10 +46,10 @@ namespace LogFreqGraph.Models
 
         public List<LogarithmicPoint> CalculateLACH()
         {
-            List<LogarithmicPoint> lachList = [];
+            List<LogarithmicPoint> lachList = new List<LogarithmicPoint>();
 
-            Dictionary<double, TransferFunction> freqFuncDict = [];
-            List<double> frequencies = [];
+            Dictionary<double, TransferFunction> freqFuncDict = new Dictionary<double, TransferFunction>();
+            List<double> frequencies = new List<double>();
             int incline = 0;
             int n = 0;
             

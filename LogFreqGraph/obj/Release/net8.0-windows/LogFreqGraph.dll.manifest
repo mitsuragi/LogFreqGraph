@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="LogFreqGraph.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="LogFreqGraph.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -116,22 +116,22 @@
       <dsig:DigestValue>pwrwXDQ/YKrLIjUgvpley+rOXvpRy9kp3+7kK4k1uKc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LogFreqGraph.dll" size="39424">
+  <file name="LogFreqGraph.dll" size="38912">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sENnaLb2N4V8D7C3TbnIDG51ncjxh7NL4ir5vP73Ia0=</dsig:DigestValue>
+      <dsig:DigestValue>YNgHofHrHjFVqicTOP5ypyZd9PhsO+YwE1iFL3YaAlQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="LogFreqGraph.exe" size="138752">
+  <file name="LogFreqGraph.exe" size="138240">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Dgcdd4vRaG2BJNbDZQIBSDiX3d1S4ykf4qsfb5w7URU=</dsig:DigestValue>
+      <dsig:DigestValue>Kc1nARQljdtze34elOaXhj5sk9fKlBrrz7/7EWvCdIs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="LogFreqGraph.runtimeconfig.json" size="458">
